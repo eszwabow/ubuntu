@@ -29,4 +29,5 @@ RUN apt-get update
 RUN apt-get -y install gfortran
 RUN apt-get -y install libxt-dev
 RUN apt-get -y install cmake
+ARG PATH
 ENV PATH="/data/usr/local/bin:${PATH}"
