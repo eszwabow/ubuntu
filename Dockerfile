@@ -1,6 +1,14 @@
 FROM ubuntu:xenial
 MAINTAINER Nimbix, Inc.
 
+# FUN3D
+RUN apt-get update
+RUN apt-get install gfortran
+RUN apt-get install libxt-dev
+RUN apt-get install cmake
+#ADD <my-app> /opt/<my-app>/bin
+
+
 # Update SERIAL_NUMBER to force rebuild of all layers (don't use cached layers)
 ARG SERIAL_NUMBER
 ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20180124.1405}
