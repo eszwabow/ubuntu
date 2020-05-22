@@ -25,8 +25,8 @@ EXPOSE 5901
 EXPOSE 443
 
 # FUN3D
-RUN sudo apt-get update
-RUN sudo apt-get install gfortran
-RUN sudo apt-get install libxt-dev
-RUN sudo apt-get install cmake
+RUN apt-get update
+RUN apt-get -y install gfortran
+RUN apt-get -y install libxt-dev
+RUN apt-get -y install cmake
 #ADD <my-app> /opt/<my-app>/bin
