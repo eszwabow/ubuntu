@@ -29,4 +29,5 @@ RUN apt-get update
 RUN apt-get -y install gfortran
 RUN apt-get -y install libxt-dev
 RUN apt-get -y install cmake
+RUN cp -f /home/nimbix/data/.bashrc /home/nimbix/.bashrc
 #ADD <my-app> /opt/<my-app>/bin
